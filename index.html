@@ -10,6 +10,10 @@
 
     <h2 id="math-heading">Math discoveries</h2>
 
+    <button>
+      click me!
+    </button>
+    
     <ul>
       <li>
         323–283 BC – Euclid: wrote a series of 13 books on geometry called The
@@ -39,9 +43,19 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
- 
+
+      $("button").click(function(){
+  $("li").toggle();
+        var math = $("#math-heading").text();
+      $("#math-heading").text("ᵔᴗᵔ " + math + " ᵔᴗᵔ");
+        
+
+      var sci = $("#science-heading").text();
+$("#science-heading").text("ᵔᴗᵔ " + sci + " ᵔᴗᵔ");
+        })
     </script>
   </body>
 </html>
+
 
 <!--- Taken From Khan Academy HTML/JS: Making webpages interactive with jQuery https://www.khanacademy.org/computing/computer-programming/html-js-jquery-->
